@@ -1,0 +1,59 @@
+.projects-header {
+  text-align: center;
+  margin: 2rem 0 3rem;
+}
+
+.projects-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.react-word {
+  color: #61dafb;
+  text-shadow: 0 0 10px rgba(97, 218, 251, 0.3);
+}
+
+.projects-word {
+  color: #ffffff;
+  background: linear-gradient(90deg, #ff6b6b, #ffa3a3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header-decoration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.decoration-line {
+  height: 2px;
+  width: 80px;
+  background: linear-gradient(90deg, transparent, #61dafb, transparent);
+}
+
+.decoration-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #61dafb;
+  border-radius: 50%;
+  margin: 0 15px;
+  box-shadow: 0 0 10px rgba(97, 218, 251, 0.7);
+}
+
+@media (max-width: 768px) {
+  .projects-title {
+    font-size: 2.5rem;
+  }
+  
+  .decoration-line {
+    width: 50px;
+  }
+}

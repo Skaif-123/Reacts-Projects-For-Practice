@@ -1,0 +1,87 @@
+.accordian {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.item {
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #f5f5f5;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.title:hover {
+  background-color: #e9e9e9;
+}
+
+.title h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.title span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.answers {
+  background-color: white;
+  /* Remove max-height transition */
+}
+
+.subsection {
+  padding: 15px;
+  line-height: 1.5;
+  display: none; /* Start hidden */
+}
+
+.subsection.show {
+  display: block; /* Show when active */
+}
+
+.AccordianHeading {
+  font-size: 1.8rem; /* Moderate size */
+  font-weight: 600;
+  text-align: center;
+  margin: 1.5rem 0;
+  color: #2d3748; /* Dark gray-blue */
+  position: relative;
+  padding-bottom: 0.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+}
+
+/* Simple underline effect */
+.AccordianHeading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: #4a5568; /* Subdued color */
+  border-radius: 3px;
+}
+
+/* Optional hover effect */
+.AccordianHeading:hover {
+  color: #2b6cb0; /* Changes to blue on hover */
+}
+
+.AccordianHeading:hover::after {
+  background: #2b6cb0;
+  width: 80px;
+  transition: all 0.3s ease;
+}
