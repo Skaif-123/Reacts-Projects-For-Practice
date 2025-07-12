@@ -7,6 +7,7 @@
     width: 100vw;
     gap: 1rem;
     margin-bottom: 0;
+    position: relative;
 }
 
 .box {
@@ -60,7 +61,7 @@
     display: flex;
     justify-content: center;
     gap: 8px;
-    position: absolute;
+    position: static;
     bottom: 20px; /* Positions at bottom of slider */
     left: 50%;
     transform: translateX(15%);

@@ -63,7 +63,7 @@
     position: absolute;
     bottom: 20px; /* Positions at bottom of slider */
     left: 50%;
-    transform: translateX(15%);
+    transform: translateX(-45%);
     z-index: 10;
 }
 
