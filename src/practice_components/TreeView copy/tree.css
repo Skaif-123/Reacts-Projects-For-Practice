@@ -7,15 +7,15 @@
 .container{
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
     height: 100vh;
     width: 100vw;
     
 }
 
 .MenuList{
-    height: 95%;
-    width: 30%;
+    height: 100%;
+    width: 50%;
     background-color: rgb(0, 21, 255);
     list-style: none;
     text-decoration: none;
@@ -23,7 +23,6 @@
     font-family: 'Times New Roman', Times, serif;
     font-weight: 900;
     color: antiquewhite;
-    border-radius: 5%;
 }
 .MenuList li{
     padding-left: 2rem;

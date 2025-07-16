@@ -1,10 +1,13 @@
-import MenuList from "./MenuList"
-import "./tree.css"
+import MenuList from "./MenuList";
+import "./tree.css";
 
-export default function TreeView({menu=[]}) {
+export default function TreeView({ menu = [] }) {
   return (
-    <div className="container">
-        <MenuList list={menu}/>
-    </div>
-  )
+    <>
+      <div className="heading">Tree view Project</div>
+      <div className="container">
+        <MenuList list={menu} />
+      </div>
+    </>
+  );
 }
