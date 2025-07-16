@@ -1,5 +1,6 @@
 import "./App.css";
-import LoadMoreData from "./components/LoadMoreButton/LoadMoreData";
+// import LoadMoreData from "./components/LoadMoreButton/LoadMoreData";
+import QrCodeGenerator from "./components/QrCode Generator/QrCodeGenerator"
 // import Accordian from "./components/Accordian/Accordian";
 // import ImageSlider from "./components/ImageSlider/ImageSlider";
 // import RandomColor from "./components/RandomColor/RandomColor";
@@ -20,8 +21,9 @@ function App() {
     //     limit={"10"}
     //   />
     //   <hr className="seperator" />
+    // <LoadMoreData url={"https://dummyjson.com/products"}/>
     <>
-    <LoadMoreData url={"https://dummyjson.com/products"}/>
+    <QrCodeGenerator/>
     </>
   );
 }
