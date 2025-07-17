@@ -24,8 +24,8 @@ function App() {
       <hr className="seperator" />
     <LoadMoreData url={"https://dummyjson.com/products"}/>
       <hr className="seperator" />
-    <TreeView  menu={data}/> 
-    */}
+      <TreeView  menu={data}/> 
+      */}
    </>
   );
 }
