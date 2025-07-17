@@ -1,4 +1,5 @@
 import "./App.css";
+import LightDarkModeConverter from "./components/light-dark-mode/LightDarkModeConverter";
 // import LoadMoreData from "./components/LoadMoreButton/LoadMoreData";
 // import QrCodeGenerator from "./components/QrCode Generator/QrCodeGenerator"
 // import Accordian from "./components/Accordian/Accordian";
@@ -27,6 +28,7 @@ function App() {
     // <LoadMoreData url={"https://dummyjson.com/products"}/>
     // <QrCodeGenerator/>
     <>
+      <LightDarkModeConverter />
     </>
   );
 }

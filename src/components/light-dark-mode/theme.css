@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+:root{
+    --backgroundColor:#fff;
+    --textColor:#000;
+     --buttonColor:#000;
+    --buttonTextColor:#fff;
+
+}
+
+[data-theme='dark']{
+    --backgroundColor:#000;
+    --textColor:#fff;
+    --buttonColor:white;
+    --buttonTextColor:#000;
+}
+
+.lightMode{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--backgroundColor);
+    color: var(--textColor);
+    font-size: xx-large;
+    gap: 3rem;
+
+}
+button{
+    padding: 1.5rem;
+    font-size: large;
+    background-color: var(--buttonColor);
+    color: var(--buttonTextColor);
+    border-radius: 15px;
+    margin-top: 1rem;
+
+}
+button:hover{
+    background-color: red;
+    color:yellow;
+    font-style: oblique;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+}
