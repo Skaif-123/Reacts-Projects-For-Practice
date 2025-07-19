@@ -1,5 +1,6 @@
 import "./App.css";
-import Scroll_Indicator from "./components/Scroll_Indicator/Scroll_Indicator";
+import ParentCustomTabs from "./components/CustomTabs/ParentCustomTabs";
+// import Scroll_Indicator from "./components/Scfroll_Indicator/Scroll_Indicator";
 // import LightDarkModeConverter from "./components/light-dark-mode/LightDarkModeConverter";
 // import LoadMoreData from "./components/LoadMoreButton/LoadMoreData";
 // import QrCodeGenerator from "./components/QrCode Generator/QrCodeGenerator"
@@ -29,9 +30,10 @@ function App() {
     // <LoadMoreData url={"https://dummyjson.com/products"}/>
     // <QrCodeGenerator/>
     // <LightDarkModeConverter />
+    // <Scroll_Indicator url={"https://dummyjson.com/products"}/>
     <>
-    <Scroll_Indicator url={"https://dummyjson.com/products"}/>
-      </>
+    <ParentCustomTabs/>
+    </>
   );
 }
 

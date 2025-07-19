@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.heading{
+    display: flex;
+    gap :0.7rem;
+    margin-top: 1rem;
+    
+}
+.tab-item{
+    border: 1px solid red;  
+    background-color: aquamarine;
+    padding: 0.3rem;
+}
+
+.tab-item.active{
+    background-color: red;
+    border: 1px solid yellow;
+    color: yellow;
+}
+.content{
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: oblique;
+}
