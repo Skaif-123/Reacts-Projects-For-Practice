@@ -1,0 +1,51 @@
+{
+  "miniprojects": [
+    {
+      "id": 1,
+      "title": "Scroll Indicator",
+      "learning": {
+        "title": "Understanding and Implementing a Scroll Indicator",
+        "points": [
+          {
+            "property": "document.documentElement.scrollTop",
+            "description": "The most reliable value indicating how many pixels the content has been scrolled vertically from the top of the entire page."
+          },
+          {
+            "property": "document.body.scrollTop",
+            "description": "Often returns 0 in modern browsers as the `documentElement` typically handles the main page scrolling. Less reliable for general scroll position."
+          },
+          {
+            "property": "document.documentElement.scrollHeight",
+            "description": "Represents the total height of the entire webpage content, encompassing both visible and currently hidden (scrolled out of view) parts."
+          },
+          {
+            "property": "document.documentElement.clientHeight",
+            "description": "The visible height of the browser's viewport (the inner window), excluding any scrollbars. This is the area where content is currently displayed."
+          },
+          {
+            "concept": "Current Scroll Position (`howMuchScrolled`)",
+            "formula": "`document.body.scrollTop || document.documentElement.scrollTop`",
+            "explanation": "This uses the logical OR operator for cross-browser compatibility, falling back to `documentElement.scrollTop` if `body.scrollTop` is 0 or falsy."
+          },
+          {
+            "concept": "Total Scrollable Distance (`scrollableHeight`)",
+            "formula": "`document.documentElement.scrollHeight - document.documentElement.clientHeight`",
+            "explanation": "This accurately determines the maximum vertical distance a user can scroll, by subtracting the visible viewport height from the total content height."
+          },
+          {
+            "concept": "Percentage Formula",
+            "formula": "`(howMuchScrolled / scrollableHeight) * 100`",
+            "explanation": "Standard formula: (part / whole) * 100."
+          },
+          {
+            "concept": "Critical Edge Case Handling",
+            "explanation": "Essential to check if `scrollableHeight` is greater than `0` *before* division. If not, the page is not scrollable, and the percentage should be 0 to avoid errors (`Infinity`/`NaN`)."
+          }
+        ]
+      },
+      "images": [],
+      "tools_used": ["React.js"]
+    }
+    
+  ]
+}

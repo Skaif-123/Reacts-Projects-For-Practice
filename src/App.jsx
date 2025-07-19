@@ -1,5 +1,6 @@
 import "./App.css";
-import LightDarkModeConverter from "./components/light-dark-mode/LightDarkModeConverter";
+import Scroll_Indicator from "./components/Scroll_Indicator/Scroll_Indicator";
+// import LightDarkModeConverter from "./components/light-dark-mode/LightDarkModeConverter";
 // import LoadMoreData from "./components/LoadMoreButton/LoadMoreData";
 // import QrCodeGenerator from "./components/QrCode Generator/QrCodeGenerator"
 // import Accordian from "./components/Accordian/Accordian";
@@ -27,9 +28,10 @@ function App() {
     //   <hr className="seperator" />
     // <LoadMoreData url={"https://dummyjson.com/products"}/>
     // <QrCodeGenerator/>
+    // <LightDarkModeConverter />
     <>
-      <LightDarkModeConverter />
-    </>
+    <Scroll_Indicator url={"https://dummyjson.com/products"}/>
+      </>
   );
 }
 
