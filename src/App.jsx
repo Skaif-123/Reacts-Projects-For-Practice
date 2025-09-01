@@ -1,5 +1,4 @@
 import "./App.css";
-import ModalTest from "./components/ModalPopUp/ModalTest";
 // import ParentCustomTabs from "./components/CustomTabs/ParentCustomTabs";
 // import Scroll_Indicator from "./components/Scfroll_Indicator/Scroll_Indicator";
 // import LightDarkModeConverter from "./components/light-dark-mode/LightDarkModeConverter";
@@ -12,6 +11,7 @@ import ModalTest from "./components/ModalPopUp/ModalTest";
 // import StarRating from "./components/Star-rating/StarRating";
 // import TreeView from "./components/TreeView/TreeView";
 // import data from "./components/TreeView/data.js";
+import Git_profile from "./components/git_profile_finder/Git_profile.jsx"
 function App() {
   return (
     // <>
@@ -33,8 +33,9 @@ function App() {
     // <LightDarkModeConverter />
     // <Scroll_Indicator url={"https://dummyjson.com/products"}/>
     // <ParentCustomTabs/>
+    // <ModalTest />
     <>
-    <ModalTest />
+    <Git_profile />
     </>
   );
 }

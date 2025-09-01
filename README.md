@@ -1,12 +1,31 @@
-# React + Vite
+# GitHub Profile Finder – Logic Documentation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![alt text](<Github profle Finder.gif>)
 
-Currently, two official plugins are available:
+This document explains the **logic** used in the `Git_profile` React component.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 1. State Management
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The component uses three pieces of state:
+
+- **`loading`**: (`true` by default)  
+  Keeps track of whether the API request is in progress.
+
+- **`username`**: (`"google"` by default)  
+  Stores the current input value for the GitHub username. Initially set to `"google"` so that the app fetches Google’s GitHub profile on first render.
+
+- **`userdata`**: (`null` by default)  
+  Stores the GitHub user data returned from the API.
+
+---
+
+## 2. Fetching GitHub User Data
+
+The function `fetchGithubUserData` is responsible for:
+
+1. Setting `loading` to `true`.
+2. Calling the GitHub API with the current `username`:  
+   ```js
+   fetch(`https://api.github.com/users/${username}`)
