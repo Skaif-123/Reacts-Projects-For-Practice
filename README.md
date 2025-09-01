@@ -1,81 +1,108 @@
-# 🔍 GitHub Profile Finder
+# 🚀 React Projects for Practice
 
-A React project that allows users to search for **GitHub profiles** by username and view their public information.  
-It uses the **GitHub REST API** to fetch live data and display user details.
+This repository contains multiple **mini React.js projects** that demonstrate core React concepts such as state management, props, conditional rendering, API integration, and component reusability.  
+
+Each project is built to strengthen React fundamentals and provide reusable UI components.
 
 ---
+
+## 📌 Projects Overview
+
+### 1. 🎵 Accordion Project
+- Expand/collapse sections with single or multiple selections.  
+- Great for FAQs and toggle-based content.  
+![alt text](<gif_images/Accordian Project.gif>)
+
+---
+
+### 2. 📑 Custom Tabs
+- Tab navigation component with active/inactive states.  
+- Switches between different content areas dynamically.  
+![alt text](gif_images/CustomTabs.gif)
+
+---
+
+### 3. 🖼️ Image Slider (with API)
+- Fetches and displays images from an API.  
+- Includes navigation arrows & indicators for a smooth slider experience.  
+![alt text](gif_images/ImageSlider-ezgif.com-video-to-gif-converter.gif)
+
+---
+
+### 4. 🔲 Modal Popup
+- Simple modal implementation in React.  
+- Opens/closes dynamically based on user interaction.  
+![alt text](<gif_images/Modal Pop UP.gif>)
+
+---
+
+### 5. 📱 QR Code Generator
+- Generates QR codes instantly from user input.  
+- Uses external libraries for QR rendering.  
+![alt text](gif_images/QrCodeGenerator.gif)
+---
+
+### 6. 🎨 Random Color Generator
+- Generates random HEX/RGB colors.  
+- Useful for testing UI color variations.  
+![alt text](gif_images/RandomColorGenerator.gif)
+
+---
+
+### 7. 📜 Scroll Indicator
+- Custom scroll progress bar built with React.  
+- Shows scroll completion percentage.  
+![alt text](gif_images/ScrollIndicator.gif)
+
+---
+
+### 8. ⭐ Star Rating
+- Interactive star rating component.  
+- Useful for feedback/review systems.  
+![alt text](gif_images/StarRating.gif)
+
+---
+
+### 9. 🌗 Theme Changer
+- Light/Dark mode toggler.  
+- Demonstrates React state and conditional styling.  
+![alt text](gif_images/ThemeChanger.gif)
+
+---
+
+### 10. 🌳 Tree View
+- Expandable/collapsible tree structure.  
+- Great for hierarchical data like menus and file explorers.  
+![alt text](gif_images/TreeView.gif)
+
+---
+### 11. 🧑‍💻 GitHub Profile Finder
+- Search and fetch **GitHub user profiles** using the GitHub API.  
+- Displays details like avatar, name, bio, followers, repositories, etc.  
+- Default username is set to **Google** so the app loads instantly on start.  
 ![alt text](<gif_images/Github profle Finder.gif>)
+---
 
-## 📌 Features
-
-- Search for any GitHub user by username  
-- Fetch live data using GitHub’s public API  
-- Display user information (avatar, bio, followers, etc.)  
-- Controlled search input with instant state updates  
-- Initial load shows data for default user (`google`)  
-- Smooth fade-in animation for results  
+## 🛠️ Tech Stack
+- **React.js** (Functional Components + Hooks)  
+- **CSS** for styling  
+- **External APIs & libraries** (for QR codes, sliders, etc.)  
 
 ---
 
-## 🛠️ Technologies Used
-
-- **React.js** – UI library  
-- **React Hooks** (`useState`, `useEffect`) – state and lifecycle management  
-- **GitHub REST API** – data source  
-- **Tailwind CSS** – UI styling  
-
----
-
-## 🔑 Logic Overview
-
-### 1. State Management
-- `loading`: Tracks API fetch status (default `true`).  
-- `username`: Stores the GitHub username entered by the user (default `"google"`).  
-- `userdata`: Stores the API response data for the searched user.  
-
-### 2. Fetching GitHub Data
-```js
-async function fetchGithubUserData() {
-  setLoading(true);
-  const res = await fetch(`https://api.github.com/users/${username}`);
-  const data = await res.json();
-
-  if (data) {
-    setUserData(data);
-    setLoading(false);
-    setUsername(""); // clear search input after fetch
-  }
-}
-
-# 👤 GithubUser Component
-
-This component is responsible for **displaying GitHub user details** fetched from the GitHub API.  
-It receives the user data as a **prop** (`user`) from the parent component (`Git_profile.jsx`).
+## 🎯 Purpose
+These projects are designed to:
+- Practice **React fundamentals**  
+- Build **reusable UI components**  
+- Improve **problem-solving skills in React**  
+- Prepare for real-world React development  
 
 ---
 
-## 📌 Features
-- Renders the user’s **profile picture (avatar)**  
-- Displays **username, bio, and profile stats**  
-- Provides a clickable **link to the user’s GitHub profile**  
-- Clean, reusable **presentational component**  
+## 📷 Demo Previews
+GIFs and screenshots of each project are included inside this repo for quick reference.  
 
 ---
 
-## 🔑 Props
-
-### `user` (object)
-The `user` prop should be the JSON response from the GitHub API for a specific username.  
-Example structure:
-
-```json
-{
-  "login": "google",
-  "avatar_url": "https://avatars.githubusercontent.com/u/1342004?v=4",
-  "html_url": "https://github.com/google",
-  "bio": "Google ❤️ Open Source",
-  "followers": 30000,
-  "following": 100,
-  "public_repos": 500
-}
-
+## 📜 License
+This repository is open-source and available under the **MIT License**.
